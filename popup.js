@@ -12,5 +12,8 @@ btn.addEventListener("click", async() => {
 });
 
 function onRun() {
-	document.body.style.backgroundColor = "#fcc";
+	// document.body.style.backgroundColor = "#fcc";
+	chrome.storage.sync.get(null, (options) => {
+		document.body.style.backgroundColor = options.colorValue;
+	});
 }
