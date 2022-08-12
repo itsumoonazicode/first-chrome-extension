@@ -3,6 +3,7 @@
 	"description": "はじめてのChrome拡張機能作成",
 	"version": "1.0",
 	"manifest_version": 3,
+	"permissions": ["activeTab", "scripting"],
 	"action": {
 		"default_popup": "popup.html"
 	},
